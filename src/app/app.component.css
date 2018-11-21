@@ -1,0 +1,147 @@
+.container {
+  max-width:600px;
+  margin:auto;
+}
+img {
+  max-width:100%;
+}
+.incoming_msg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.incoming_msg {
+  padding: 0 0 0 5px;
+  width: 90%;
+}
+.incoming_msg_img {
+  vertical-align: top;
+  display: inline-block;
+  width: 16%;
+}
+.incoming_msg_txt {
+  vertical-align: top;
+  display: inline-block;
+  width: 70%;
+}
+.incoming_msg_txt p {
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 6px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 90%;
+}
+.time_date_left {
+  color: #747474;
+  display: block;
+  font-size: 10px;
+  margin: 2px 0 0;
+  padding: 0px 0px 0px 12px;
+}
+.time_date_right {
+  color: #747474;
+  display: block;
+  font-size: 10px;
+  margin: 2px 0 0;
+  float: right;
+  padding: 0px 12px 0px 0px;
+}
+
+.outgoing_msg {
+  /*overflow:hidden; */
+  vertical-align: top;
+  margin:16px 0 16px;
+  float: right;
+  width:90%
+}
+.outgoing_msg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.outgoing_msg_img {
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 5px;
+  width: 16%;
+}
+.outgoing_msg_txt {
+  vertical-align: top;
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 70%;
+}
+.outgoing_msg_txt p {
+  background: #05728f none repeat scroll 0 0;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0; color:#fff;
+  padding: 5px 10px 5px 12px;
+  width:90%;
+}
+/* Part 3 - Input and Send message */
+.input_msg_write input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+}
+.type_msg {
+  border-top: 1px solid #c4c4c4;
+  position: relative;
+}
+.msg_send_button {
+  background: #05778f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 33px;
+}
+/* Global list */
+.messaging {
+  padding: 0 0 50px 0;
+}
+.mesgs {
+  /* does not do anything float: left; */
+  padding: 30px 15px 0 25px;
+  width: 60%;
+}
+.ul_without_dots {
+  list-style-type: none;
+}
+.ul_scrolled_to_bottom {
+  max-height: 516px;
+  overflow-y:auto;
+}
+.avatarme {
+  width: 90%;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 900;
+  color: #000;
+  line-height: 40px;
+  text-align: center;
+  background: #faf
+}
+.avataryou {
+  width: 90%;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 900;
+  color: #000;
+  line-height: 40px;
+  text-align: center;
+  background: #afe;
+}
+

@@ -1,0 +1,35 @@
+<div class="container">
+  <h3 class=" text-center">Messaging</h3>
+  <div class="messaging">
+    <div class="mesgs">
+      <ul class="ul_without_dots ul_scrolled_to_bottom" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+        <li *ngFor="let chat of chats">
+          <div class="incoming_msg" *ngIf="chat.who==='me'">
+            <div class="incoming_msg_img">
+              <div class="avatarme">Me</div>
+            </div>
+            <div class="incoming_msg_txt">
+              <p>{{chat.content}}</p>
+              <span class="time_date_left"> {{ chat.time}}</span>
+            </div>
+          </div>
+          <div class="outgoing_msg" *ngIf="chat.who==='you'">
+            <div class="outgoing_msg_txt">
+              <p>{{chat.content}}</p>
+              <span class="time_date_right"> {{ chat.time}}</span>
+            </div>
+            <div class="outgoing_msg_img">
+              <div class="avataryou">You</div>
+              </div>
+          </div>
+        </li>
+      </ul>
+      <div class="type_msg">
+        <div class="input_msg_write">
+          <input type="text" class="write_msg" placeholder="Type a message" />
+          <button class="msg_send_button" type="button"> > </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
